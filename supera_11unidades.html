@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_07812e3e216a499897664c58ec5105f7 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_07812e3e216a499897664c58ec5105f7" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_07812e3e216a499897664c58ec5105f7 = L.map(
+        'map_07812e3e216a499897664c58ec5105f7', {
+        center: [-23.5277276, -46.726475],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_4dbb563b913241c6802f42d81f83e475 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_07812e3e216a499897664c58ec5105f7);
+    
+        var marker_5939b29edb674e008e18c25441ca3a5a = L.marker(
+            [-23.5530372, -46.5458466],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_387d33bb09f14fb8b5f9a29e155d70b3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5939b29edb674e008e18c25441ca3a5a.setIcon(icon_387d33bb09f14fb8b5f9a29e155d70b3);
+            
+    
+            var popup_b79cba8db80d4f19b6cf12a95a811160 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2316edee5c784a23a43c68f72fe2dc70 = $(`<div id="html_2316edee5c784a23a43c68f72fe2dc70" style="width: 100.0%; height: 100.0%;"><i>SUPERA Vila Carrão</i></div>`)[0];
+                popup_b79cba8db80d4f19b6cf12a95a811160.setContent(html_2316edee5c784a23a43c68f72fe2dc70);
+            
+
+            marker_5939b29edb674e008e18c25441ca3a5a.bindPopup(popup_b79cba8db80d4f19b6cf12a95a811160)
+            ;
+
+            
+        
+    
+        marker_5939b29edb674e008e18c25441ca3a5a.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ee5022398c2d4b74908221d7d4413e35 = L.marker(
+            [-23.6180679, -46.6371507],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_120b39da1a6d4032ac7f9ccd5bbd4772 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ee5022398c2d4b74908221d7d4413e35.setIcon(icon_120b39da1a6d4032ac7f9ccd5bbd4772);
+            
+    
+            var popup_c6cdc99b13574cfea3dd9cf7d765b2a5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5dde15c3c7e1490aa334a4af52933180 = $(`<div id="html_5dde15c3c7e1490aa334a4af52933180" style="width: 100.0%; height: 100.0%;"><i>SUPERA Saúde</i></div>`)[0];
+                popup_c6cdc99b13574cfea3dd9cf7d765b2a5.setContent(html_5dde15c3c7e1490aa334a4af52933180);
+            
+
+            marker_ee5022398c2d4b74908221d7d4413e35.bindPopup(popup_c6cdc99b13574cfea3dd9cf7d765b2a5)
+            ;
+
+            
+        
+    
+        marker_ee5022398c2d4b74908221d7d4413e35.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_94fc263baca441099b80cc218d92887d = L.marker(
+            [-23.561744, -46.6873688],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_d4fefdaf3d454136964e315d61ae14e3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94fc263baca441099b80cc218d92887d.setIcon(icon_d4fefdaf3d454136964e315d61ae14e3);
+            
+    
+            var popup_e1fadc11bf774a5d94518fd2ebbedff9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_caae33843b5f4b56adf26a29be74afec = $(`<div id="html_caae33843b5f4b56adf26a29be74afec" style="width: 100.0%; height: 100.0%;"><i>SUPERA Pinheiros</i></div>`)[0];
+                popup_e1fadc11bf774a5d94518fd2ebbedff9.setContent(html_caae33843b5f4b56adf26a29be74afec);
+            
+
+            marker_94fc263baca441099b80cc218d92887d.bindPopup(popup_e1fadc11bf774a5d94518fd2ebbedff9)
+            ;
+
+            
+        
+    
+        marker_94fc263baca441099b80cc218d92887d.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3aa7d979533d4609b64eb71b7b08c69b = L.marker(
+            [-23.5277276, -46.726475],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_5fe9789e67474f7f856a960d8f5f5b50 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3aa7d979533d4609b64eb71b7b08c69b.setIcon(icon_5fe9789e67474f7f856a960d8f5f5b50);
+            
+    
+            var popup_adb8e7ae103c435daf2cdbe2ffc83fcf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0d475fe17d9e42c3ba2011b1a3c2369a = $(`<div id="html_0d475fe17d9e42c3ba2011b1a3c2369a" style="width: 100.0%; height: 100.0%;"><i>SUPERA Alto da Lapa</i></div>`)[0];
+                popup_adb8e7ae103c435daf2cdbe2ffc83fcf.setContent(html_0d475fe17d9e42c3ba2011b1a3c2369a);
+            
+
+            marker_3aa7d979533d4609b64eb71b7b08c69b.bindPopup(popup_adb8e7ae103c435daf2cdbe2ffc83fcf)
+            ;
+
+            
+        
+    
+        marker_3aa7d979533d4609b64eb71b7b08c69b.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_82a8b00a95484c06aa1d87ceac815e66 = L.marker(
+            [-23.5930581, -46.6355416],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_f80d1814a3f049528fd6bb15857013ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_82a8b00a95484c06aa1d87ceac815e66.setIcon(icon_f80d1814a3f049528fd6bb15857013ac);
+            
+    
+            var popup_5b6b482cc8f94bfc91dc83db567ae87b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9744b381c48d4c40b304ff09fe7e73df = $(`<div id="html_9744b381c48d4c40b304ff09fe7e73df" style="width: 100.0%; height: 100.0%;"><i>SUPERA Vila Mariana</i></div>`)[0];
+                popup_5b6b482cc8f94bfc91dc83db567ae87b.setContent(html_9744b381c48d4c40b304ff09fe7e73df);
+            
+
+            marker_82a8b00a95484c06aa1d87ceac815e66.bindPopup(popup_5b6b482cc8f94bfc91dc83db567ae87b)
+            ;
+
+            
+        
+    
+        marker_82a8b00a95484c06aa1d87ceac815e66.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dff9ba0fd8564d589c1242f62c081c77 = L.marker(
+            [-23.6430001, -46.6432177],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_228d0d5a403440ed936726e7514c72d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dff9ba0fd8564d589c1242f62c081c77.setIcon(icon_228d0d5a403440ed936726e7514c72d4);
+            
+    
+            var popup_98142ce3e39f4df987744e2b9a1aaf28 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_053bd0e7016d4f3da97af4efb7909f8f = $(`<div id="html_053bd0e7016d4f3da97af4efb7909f8f" style="width: 100.0%; height: 100.0%;"><i>SUPERA Jabaquara</i></div>`)[0];
+                popup_98142ce3e39f4df987744e2b9a1aaf28.setContent(html_053bd0e7016d4f3da97af4efb7909f8f);
+            
+
+            marker_dff9ba0fd8564d589c1242f62c081c77.bindPopup(popup_98142ce3e39f4df987744e2b9a1aaf28)
+            ;
+
+            
+        
+    
+        marker_dff9ba0fd8564d589c1242f62c081c77.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_03eb8fa740914cb4bcbc22d1324263ec = L.marker(
+            [-23.5386155, -46.5652536],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_d3cd8d0bd28a4559896c126914086746 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_03eb8fa740914cb4bcbc22d1324263ec.setIcon(icon_d3cd8d0bd28a4559896c126914086746);
+            
+    
+            var popup_1d83c3ff106d4658829b3f41241dd940 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c7f08df8001846fc8385a4366041f2a2 = $(`<div id="html_c7f08df8001846fc8385a4366041f2a2" style="width: 100.0%; height: 100.0%;"><i>SUPERA Tatuapé</i></div>`)[0];
+                popup_1d83c3ff106d4658829b3f41241dd940.setContent(html_c7f08df8001846fc8385a4366041f2a2);
+            
+
+            marker_03eb8fa740914cb4bcbc22d1324263ec.bindPopup(popup_1d83c3ff106d4658829b3f41241dd940)
+            ;
+
+            
+        
+    
+        marker_03eb8fa740914cb4bcbc22d1324263ec.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ace353441aec40ceaf1131d3f455d1d0 = L.marker(
+            [-23.63860355, -46.69754689747405],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_21c5048f3ec646d7a86c04e8e0e939a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ace353441aec40ceaf1131d3f455d1d0.setIcon(icon_21c5048f3ec646d7a86c04e8e0e939a1);
+            
+    
+            var popup_58bdb91ad4aa46d7bd5f2e426ce22735 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_61322e81f0c2421b991d74e6b6fdb628 = $(`<div id="html_61322e81f0c2421b991d74e6b6fdb628" style="width: 100.0%; height: 100.0%;"><i>SUPERA Santo Amaro</i></div>`)[0];
+                popup_58bdb91ad4aa46d7bd5f2e426ce22735.setContent(html_61322e81f0c2421b991d74e6b6fdb628);
+            
+
+            marker_ace353441aec40ceaf1131d3f455d1d0.bindPopup(popup_58bdb91ad4aa46d7bd5f2e426ce22735)
+            ;
+
+            
+        
+    
+        marker_ace353441aec40ceaf1131d3f455d1d0.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2520cbe5f8924ccd8d7f580cd7e69fd5 = L.marker(
+            [-23.573887, -46.6467274],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_ef710da1e4584326a93c9c109f650dc9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2520cbe5f8924ccd8d7f580cd7e69fd5.setIcon(icon_ef710da1e4584326a93c9c109f650dc9);
+            
+    
+            var popup_f41a6c991da34589b78db1d076231479 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b7db5b0da64845a19dadc4669f3f5c2f = $(`<div id="html_b7db5b0da64845a19dadc4669f3f5c2f" style="width: 100.0%; height: 100.0%;"><i>SUPERA Brigadeiro</i></div>`)[0];
+                popup_f41a6c991da34589b78db1d076231479.setContent(html_b7db5b0da64845a19dadc4669f3f5c2f);
+            
+
+            marker_2520cbe5f8924ccd8d7f580cd7e69fd5.bindPopup(popup_f41a6c991da34589b78db1d076231479)
+            ;
+
+            
+        
+    
+        marker_2520cbe5f8924ccd8d7f580cd7e69fd5.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6ce955cd76264bc79daedc3f8bb54185 = L.marker(
+            [-23.4866055, -46.7380829],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_e4942cb5b9b44481873544d542e47340 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ce955cd76264bc79daedc3f8bb54185.setIcon(icon_e4942cb5b9b44481873544d542e47340);
+            
+    
+            var popup_60aa4c0cd16b4fd5b8db9fe4f4adb79d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_44a2cdb95a894feab5553f9154fdbe8e = $(`<div id="html_44a2cdb95a894feab5553f9154fdbe8e" style="width: 100.0%; height: 100.0%;"><i>SUPERA Pirituba</i></div>`)[0];
+                popup_60aa4c0cd16b4fd5b8db9fe4f4adb79d.setContent(html_44a2cdb95a894feab5553f9154fdbe8e);
+            
+
+            marker_6ce955cd76264bc79daedc3f8bb54185.bindPopup(popup_60aa4c0cd16b4fd5b8db9fe4f4adb79d)
+            ;
+
+            
+        
+    
+        marker_6ce955cd76264bc79daedc3f8bb54185.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dcdfa311e4a84797b809ae9808b0c453 = L.marker(
+            [-23.599231, -46.661782],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_07812e3e216a499897664c58ec5105f7);
+        
+    
+
+                var icon_80194bc3f0c3425ab679a61b5a58b284 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dcdfa311e4a84797b809ae9808b0c453.setIcon(icon_80194bc3f0c3425ab679a61b5a58b284);
+            
+    
+            var popup_a7dc598473f546659a695f87ccd43111 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_78319ab3e41e48e0bba94d96cc81d459 = $(`<div id="html_78319ab3e41e48e0bba94d96cc81d459" style="width: 100.0%; height: 100.0%;"><i>SUPERA Moema</i></div>`)[0];
+                popup_a7dc598473f546659a695f87ccd43111.setContent(html_78319ab3e41e48e0bba94d96cc81d459);
+            
+
+            marker_dcdfa311e4a84797b809ae9808b0c453.bindPopup(popup_a7dc598473f546659a695f87ccd43111)
+            ;
+
+            
+        
+    
+        marker_dcdfa311e4a84797b809ae9808b0c453.bindTooltip(
+            `<div>`
+            + `Clique aqui!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_0f91c73bc35e40b3af99580b2ee923ed = L.circleMarker(
+                [-23.5277276, -46.726475],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FFA500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FFA500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_07812e3e216a499897664c58ec5105f7);
+            
+</script>
